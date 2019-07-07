@@ -1,0 +1,33 @@
+Cambridge mathematical reading list: https://www.maths.cam.ac.uk/sites/www.maths.cam.ac.uk/files/pre2014/undergrad/admissions/readinglist.pdf
+
+GENERAL
+Flatland – Edwin Abbott
+Fermat's last theorem – Simon Singh
+A Mathematician’s Apology - G.H. Hardy
+
+CALCULUS
+Early transcendentals – James Stewart
+Calculus – Michael Spivak
+
+LINEAR ALGEBRA
+Elementary Linear Algebra – Howard Anton
+
+DIFFERENTIAL EQUATIONS:
+Partial Differential Equations an introduction – Walter Strauss
+James Nearing, Mathematical Tools for Physics: http://www.physics.miami.edu/~nearing/mathmethods/
+
+COMPLEX ANALYSIS:
+Visual complex analysis – Tristian Needham
+
+OTHER 
+Principles of mathematical analysis – Walter Rudin
+Analysis I – Terence Tao
+Algebraic topology – Allen Hatcher
+Mathematical methods in the physical sciences – Mary Boas
+Abstract algebra – Dummit and Foote
+Discrete math and applications – Kenneth Rosen
+How to think like a mathematician - Houston
+
+This video is not sponsored but I recommend learning concepts on Brilliant who have sponsored other videos of mine https://brilliant.org/?utm_medium=sponsor&utm_source=youtube&utm_campaign=tibees_0419
+
+See also the John Baez page for leaning math: http://math.ucr.edu/home/baez/books.html#math
