@@ -1,0 +1,5 @@
+{
+  "jwtPrivateKey": "notlost_jwtPrivateKey",
+  "db": "notlost_db",
+  "secretKey": "notlost_secretKey"
+}
