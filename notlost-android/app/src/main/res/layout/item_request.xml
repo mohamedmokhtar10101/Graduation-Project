@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="java.lang.Integer" />
+
+        <variable
+            name="acceptListner"
+            type="com.gp.findlost.callback.OnAcceptClickListner" />
+
+        <variable
+            name="rejectListner"
+            type="com.gp.findlost.callback.OnRejectClickListner" />
+
+        <variable
+            name="removeListner"
+            type="com.gp.findlost.callback.OnRemoveClickListner" />
+
+        <variable
+            name="phoneListner"
+            type="com.gp.findlost.callback.OnCallClickListner" />
+
+        <variable
+            name="request"
+            type="com.gp.findlost.data.model.Request" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:onClick="@{() -> removeListner.onRemoveCLickListner(request)}"
+            android:src="@drawable/ic_search_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:layout_marginTop="8dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/remove">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/requestImage"
+                    loadImage="@{request.image}"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_placeholder"
+                    android:visibility="@{request.image != null ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    loadImage="@{request.user.image}"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/img_placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/requestImage" />
+
+                <ImageButton
+                    android:id="@+id/appointmentActionCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/back_solid_primary"
+                    android:onClick="@{() -> phoneListner.onPhoneClicked(request.user.phone)}"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_call_white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/requestImage" />
+
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@{request.user.fullName()}"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/userImage"
+                    app:layout_constraintStart_toEndOf="@+id/userImage"
+                    app:layout_constraintTop_toTopOf="@+id/userImage" />
+
+                <TextView
+                    android:id="@+id/itemDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@{request.description}"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+
+                <Button
+                    android:id="@+id/accept"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/back_solid_green"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:onClick="@{() -> acceptListner.onAcceptClicked(request, position)}"
+                    android:text="@string/accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:visibility="@{request.state.equals(`pending`) ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintEnd_toStartOf="@+id/reject"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/itemDescription" />
+
+
+                <Button
+                    android:id="@+id/reject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/back_solid_red"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:onClick="@{() -> rejectListner.onRejectClicked(request, position)}"
+                    android:text="@string/reject"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:visibility="@{request.state.equals(`pending`) ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/accept"
+                    app:layout_constraintTop_toBottomOf="@+id/itemDescription" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
