@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#161734"
+    tools:context=".Activities.SettingActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#161728"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" EDIT PROFILE / SETTINGS"
+            android:textColor="#918112"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="87dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:drawableLeft="@drawable/ic_add_circle_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="Add Image"
+            android:textColor="#fff"
+            android:textSize="20sp">
+
+
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="110dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="267dp">
+
+            <com.robertlevonyan.views.expandable.Expandable
+                android:id="@+id/expandable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#161734"
+                app:exp_headerBackgroundColor="#161734">
+
+                <include
+                    android:id="@+id/header"
+                    layout="@layout/header_view" />
+
+                <include
+                    android:id="@+id/content"
+                    layout="@layout/header_view2" />
+            </com.robertlevonyan.views.expandable.Expandable>
+
+            <com.robertlevonyan.views.expandable.Expandable
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#161734"
+                app:exp_headerBackgroundColor="#161734"
+                tools:ignore="MissingConstraints"
+
+                >
+
+                <include
+                    android:id="@+id/header"
+                    layout="@layout/header_personal_info" />
+
+                <include
+                    android:id="@+id/content"
+                    layout="@layout/header_view2" />
+            </com.robertlevonyan.views.expandable.Expandable>
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="69dp"
+                android:layout_gravity="bottom|center"
+                android:src="@mipmap/ic_launcher"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

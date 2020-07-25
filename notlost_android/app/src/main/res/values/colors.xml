@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#161734</color>
+    <color name="colorPrimaryDark">#291D24</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorHide">#00FFFFFF</color>
+    <color name="textColorOfGetstartBtn">#3B2935</color>
+    <color name="white">#fff</color>
+    <color name="orange">#FF5722</color>
+</resources>

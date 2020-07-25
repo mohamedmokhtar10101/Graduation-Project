@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_splash"
+    tools:context=".Activities.GetStarted">
+
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+
+        android:layout_marginTop="@dimen/_140sdp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:background="@drawable/background_of_getstarted"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="Get Started"
+        android:id="@+id/getStart"
+
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/textColorOfGetstartBtn"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

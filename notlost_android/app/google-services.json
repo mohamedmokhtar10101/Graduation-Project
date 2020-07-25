@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "991434850490",
+    "firebase_url": "https://lostchildren-57b20.firebaseio.com",
+    "project_id": "lostchildren-57b20",
+    "storage_bucket": "lostchildren-57b20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991434850490:android:69742dc0d5d9f01f",
+        "android_client_info": {
+          "package_name": "com.example.findlostchildren"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991434850490-vial241rvbhm9ifkof753av6635760p3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findlostchildren",
+            "certificate_hash": "fe66fd2d6825474d69611cc1043f2c5f2c1dd4cd"
+          }
+        },
+        {
+          "client_id": "991434850490-d8e7damuh2u9mvm430dshs692fp6bu3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findlostchildren",
+            "certificate_hash": "9e25793b13719935f0bcd7dd9525c1b7c6be9c88"
+          }
+        },
+        {
+          "client_id": "991434850490-c7m34p5sr6qf5nlqbsuuljvim305tie1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3PWsf-InG_V6RfA54dZpmhryH1XgghRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991434850490-c7m34p5sr6qf5nlqbsuuljvim305tie1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

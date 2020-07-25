@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.RegistrationActivity"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroud_login"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:background="@drawable/gradient_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progressOfRejester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+
+
+<LinearLayout
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+      android:id="@+id/parentOfRejester"
+    android:layout_height="match_parent"
+  >
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints"/>
+    <LinearLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="User Name"
+            android:textSize="@dimen/_10sdp"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:id="@+id/edit_userName"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+        <EditText
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="E-MAIL"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:id="@+id/edit_email"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+
+
+
+        <EditText
+            android:textSize="@dimen/_10sdp"
+
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="phone"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:id="@+id/edit_phone"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+        <EditText
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:id="@+id/edit_password"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+        <EditText
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="RE-PASSWORD"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:id="@+id/edit_repass"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:textSize="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_btn1"
+            android:text="SIGN UP"
+            android:textColor="#fff"
+
+            android:id="@+id/rejester"
+
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
+
+

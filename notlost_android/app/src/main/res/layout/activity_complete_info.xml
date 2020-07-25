@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#161734"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CompleteInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#161728"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar">
+        <TextView
+            android:text="  COMPLETE INFORMATION"
+            android:textColor="#14A252"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="87dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"
+
+            />
+        <TextView
+            android:drawableLeft="@drawable/ic_add_circle_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Add Image"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff">
+
+
+        </TextView>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="CITY"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="PHONE NUMBER"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="AGE"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="FACEBOOK USER/LINK"
+            android:paddingBottom="15sp"
+            android:textColorHint="#E4E7E4E4"
+            android:id="@+id/editText5"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="ABOUT ME"
+            android:paddingBottom="10sp"
+            android:textColorHint="#E4E7E4E4"
+            android:backgroundTint="#fff"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="316dp"
+            android:layout_height="74dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/background_edittext1"
+            android:ems="10"
+            android:id="@+id/editText"/>
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="81dp"
+            android:layout_height="69dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"
+
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="33dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp">
+
+    </ImageView>
+</FrameLayout>
