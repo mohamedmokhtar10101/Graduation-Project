@@ -1,6 +1,7 @@
 package com.gp.findlost.views.signup;
 
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
 
@@ -133,7 +134,18 @@ public class SignUpFragment extends BaseFragment {
     }
 
     private boolean getInputData() {
-        return InputValidator.registerValidation(getActivity(), binding.signUpFirstNameEditText, binding.signUpLastNameEditText,
-                binding.signUpPasswordEditText, binding.signUpPhoneEditText);
+        if (!InputValidator.registerValidation(getActivity(), binding.signUpFirstNameEditText, binding.signUpLastNameEditText,
+                binding.signUpPasswordEditText, binding.signUpPhoneEditText)) {
+            return false;
+        }
+
+        String email = binding.signUpEmailEditText.getText().toString().trim();
+        if (!email.isEmpty()) {
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                binding.signUpEmailEditText.setError("Invalid Email");
+                return false;
+            }
+        }
+        return true;
     }
 }

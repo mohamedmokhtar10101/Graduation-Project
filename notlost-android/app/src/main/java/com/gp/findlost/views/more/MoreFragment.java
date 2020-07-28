@@ -53,6 +53,13 @@ public class MoreFragment extends BaseFragment {
         binding.setIsLogin(PrefManager.isLogin());
         if (PrefManager.isLogin()) {
             binding.setUser(PrefManager.getUser());
+            if (PrefManager.getUser().getEmail() == null){
+                binding.userEmail.setVisibility(View.GONE);
+            } else {
+                binding.userEmail.setVisibility(View.VISIBLE);
+            }
+        } else {
+            binding.userEmail.setVisibility(View.GONE);
         }
 
 
