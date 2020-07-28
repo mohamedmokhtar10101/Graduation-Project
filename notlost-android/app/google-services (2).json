@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "927587654946",
+    "firebase_url": "https://notlost-7ce60.firebaseio.com",
+    "project_id": "notlost-7ce60",
+    "storage_bucket": "notlost-7ce60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927587654946:android:1e1130100b3c529c7e597b",
+        "android_client_info": {
+          "package_name": "com.gp.findlost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927587654946-6hfebj47hnlcofh7jtfp8rfjes0g76pj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gp.findlost",
+            "certificate_hash": "a148dc2b1ff8897829caf5fc89ef4e4cc4fb8f13"
+          }
+        },
+        {
+          "client_id": "927587654946-dgcsavrguskue08jct28rvs3sl9noj69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACGsuwWh7RGuXnC0oq1EBm3BjRe4czbyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927587654946-dgcsavrguskue08jct28rvs3sl9noj69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

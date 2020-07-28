@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">!lost</string>
+
+
+    <string name="default_notification_channel_id" translatable="false">Find Lost </string>
+    <string name="default_notification_channel_des" translatable="false">Notifications From Find Lost</string>
+
+    <string name="loading">Loading…</string>
+    <string name="loading_body">"Hold on! Please wait till the process is done… "</string>
+    <string name="error">Error</string>
+    <string name="something_went_wrong">Something went wrong \n Please try again.</string>
+    <string name="no_internet">No Internet</string>
+    <string name="check_internet_connection">Can’t connect to the internet,Please check your connection.</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="email_validation">Not valid Username</string>
+    <string name="phone_validator">Phone Number is required</string>
+    <string name="email_validator">Email is required</string>
+    <string name="password_validator">Password is required</string>
+    <string name="password_length">Password should be at least 6 number</string>
+    <string name="firstName_validator">First Name is required</string>
+    <string name="lastName_validator">Last Name is required</string>
+    <string name="valid_email">Please Enter Valid email</string>
+    <string name="email_require">Email is required</string>
+    <string name="valid_mobile">Please Enter Valid Phone Number</string>
+    <string name="username_validator">Username is required</string>
+    <string name="phone_length">Phone should be at least 11 number</string>
+    <string name="confirm_password_validator">Confirm Password is required</string>
+    <string name="password_doesnot_match">Passwords doesn\'t match</string>
+    <string name="valid_name">Name is required</string>
+    <string name="valid_description">Description is required</string>
+    <string name="valid_address">Address is required</string>
+    <string name="valid_age">Age is required</string>
+
+    <string name="more">More</string>
+    <string name="back_button" translatable="false">Back Button</string>
+    <string name="signin">Log In</string>
+    <string name="more_fragment">More</string>
+    <string name="signin_fragment">SignIn</string>
+    <string name="splash_fragment">Splash</string>
+    <string name="log_in">Log In</string>
+    <string name="i_forget_my_password">I forget my password</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="invalid_email_or_password">Invalid email or password</string>
+    <string name="home">Home</string>
+    <string name="items">Items</string>
+    <string name="my_posts">My Posts</string>
+    <string name="items_fragment">Items Fragment</string>
+    <string name="children_fragment">Children Fragment</string>
+    <string name="my_posts_fragment">My Posts Fragment</string>
+    <string name="search_for_items">Search for items by name or city</string>
+    <string name="search_for_children">Search for children by name or city</string>
+    <string name="we_couldn_t_found_it">We couldn\'t found it!</string>
+    <string name="we_are_sorry_but_your_search_didn_t_have_any_result">We are sorry, but your search didn\'t have any result</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="log_out">Log Out</string>
+    <string name="sign_in">Sign in</string>
+    <string name="or">Or</string>
+    <string name="sign_up">Sign up</string>
+    <string name="contact_us">Contact us</string>
+    <string name="about_us">About us</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="email">Email</string>
+    <string name="sign_up_fragment">Sign up Fragment</string>
+    <string name="edit_profile_fragment">Edit Profile Fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="age">Age</string>
+    <string name="children">Children</string>
+    <string name="type">Type</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="add">Add</string>
+    <string name="images">Images</string>
+    <string name="item">Item</string>
+    <string name="add_fragment">Add</string>
+    <string name="city">City</string>
+    <string name="lost">Lost</string>
+    <string name="found">Found</string>
+    <string name="description">Description</string>
+    <string name="requestChild">Request</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="no_results_found">No results found.</string>
+    <string name="my_requests">My Requests</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="call">Call</string>
+    <string name="username">Username</string>
+    <string name="save">Save</string>
+    <string name="remove">Remove</string>
+    <string name="block">Block</string>
+    <string name="just_remove">Just remove</string>
+
+</resources>
